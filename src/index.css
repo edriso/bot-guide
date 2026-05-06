@@ -799,9 +799,10 @@ hr {
   font-size: 0.9rem;
   background: linear-gradient(180deg, transparent, transparent);
 }
-.compare-table .ct-discord {
-  border-left: 2px solid transparent;
+.compare-table .ct-discord,
+.compare-table .ct-telegram {
   position: relative;
+  border-left: 2px solid transparent;
 }
 .compare-table .ct-discord::before,
 .compare-table .ct-telegram::before {
