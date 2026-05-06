@@ -967,12 +967,26 @@ hr {
 @media (max-width: 900px) {
   :root {
     --sidebar-w: 0px;
+    --header-h: 60px;
   }
   .app {
     grid-template-columns: 1fr;
     grid-template-areas:
       'header'
       'main';
+  }
+  .brand em {
+    display: none;
+  }
+  .header {
+    padding: 0 1rem;
+    gap: 0.6rem;
+  }
+  .nav {
+    gap: 0.1rem;
+  }
+  .nav-link {
+    padding: 0.4rem 0.55rem;
   }
   .sidebar {
     position: fixed;

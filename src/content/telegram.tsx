@@ -127,27 +127,27 @@ export const telegramSections: Section[] = [
         <h3>What bots are great for</h3>
         <ul>
           <li>
-            <strong>Notifications</strong>. Alerts from your servers,
+            <strong>Notifications</strong>: alerts from your servers,
             CI builds, news, sports scores.
           </li>
           <li>
-            <strong>Search and lookup</strong>. Query a database, scan
+            <strong>Search and lookup</strong>: query a database, scan
             menus, look up tickets, find a user.
           </li>
           <li>
-            <strong>Games and quizzes</strong>. Telegram has a built-in
+            <strong>Games and quizzes</strong>: Telegram has a built-in
             "games" feature, or use Mini Apps for richer ones.
           </li>
           <li>
-            <strong>E-commerce</strong>. Show a catalog, take orders, charge
+            <strong>E-commerce</strong>: show a catalog, take orders, charge
             money via Stars or card payments.
           </li>
           <li>
-            <strong>Customer service</strong>. Small businesses run their
+            <strong>Customer service</strong>: small businesses run their
             entire support flow through a bot.
           </li>
           <li>
-            <strong>Admin helpers</strong>. Moderate big supergroups,
+            <strong>Admin helpers</strong>: moderate big supergroups,
             kick spam, gate joins, set captchas.
           </li>
         </ul>
@@ -309,11 +309,11 @@ export const telegramSections: Section[] = [
         <h3>When to pick which</h3>
         <ul>
           <li>
-            <strong>Polling</strong>. Local development, hobby projects,
+            <strong>Polling</strong>: local development, hobby projects,
             servers without a public URL, runtimes that sleep when idle.
           </li>
           <li>
-            <strong>Webhooks</strong>. Production bots, serverless platforms,
+            <strong>Webhooks</strong>: production bots, serverless platforms,
             anywhere you want the lowest latency and don't pay for idle time.
           </li>
         </ul>
@@ -684,18 +684,18 @@ export const telegramSections: Section[] = [
         </p>
         <ul>
           <li>
-            <strong>Captcha gates</strong>. New members must tap a button
+            <strong>Captcha gates</strong>: new members must tap a button
             within X seconds or get kicked.
           </li>
           <li>
-            <strong>Word filters</strong>. Auto-delete or warn for banned
+            <strong>Word filters</strong>: auto-delete or warn for banned
             phrases.
           </li>
           <li>
-            <strong>Slow mode</strong>. Limit how often each user can post.
+            <strong>Slow mode</strong>: limit how often each user can post.
           </li>
           <li>
-            <strong>Reputation systems</strong>. Track helpful answers, give
+            <strong>Reputation systems</strong>: track helpful answers, give
             badges.
           </li>
         </ul>
@@ -845,20 +845,20 @@ export const telegramSections: Section[] = [
         <h3>Other patterns that work</h3>
         <ul>
           <li>
-            <strong>Paid channels</strong>. You sell access to a private
+            <strong>Paid channels</strong>: you sell access to a private
             channel with exclusive content; subscribers pay through Stars or
             an external system.
           </li>
           <li>
-            <strong>Mini Apps</strong>. Full e-commerce or SaaS UIs inside
+            <strong>Mini Apps</strong>: full e-commerce or SaaS UIs inside
             Telegram, often the highest-grossing kind of "bot".
           </li>
           <li>
-            <strong>White-label admin bots</strong>. Sell your moderation or
+            <strong>White-label admin bots</strong>: sell your moderation or
             analytics bot to community owners as a subscription.
           </li>
           <li>
-            <strong>External funnel</strong>. Give a free taste in the bot,
+            <strong>External funnel</strong>: give a free taste in the bot,
             sell via your own site for the full product.
           </li>
         </ul>
@@ -889,7 +889,7 @@ export const telegramSections: Section[] = [
         <h3>Where to be listed</h3>
         <ul>
           <li>
-            <strong>Telegram's in-app search</strong>. Your username has to
+            <strong>Telegram's in-app search</strong>: your username has to
             be public for users to find it.
           </li>
           <li>
@@ -901,7 +901,7 @@ export const telegramSections: Section[] = [
             up, help people, drop your bot only when relevant.
           </li>
           <li>
-            <strong>ProductHunt, IndieHackers, X/Twitter</strong>. Outside
+            <strong>ProductHunt, IndieHackers, X/Twitter</strong>: outside
             Telegram, but Telegram-native creators read these.
           </li>
         </ul>
@@ -909,7 +909,7 @@ export const telegramSections: Section[] = [
         <h3>Things that drive growth</h3>
         <ul>
           <li>
-            <strong>Inline mode</strong>. Every time someone uses your bot
+            <strong>Inline mode</strong>: every time someone uses your bot
             inline in a chat, the recipients see the "via @yourbot" footer.
             Free advertising.
           </li>

@@ -17,7 +17,7 @@ export const discordSections: Section[] = [
       <>
         <p>
           Think of Discord like a city of clubhouses. Each clubhouse is a{' '}
-          <strong>server</strong>. Inside a clubhouse there are different rooms
+          <strong>server</strong>: inside a clubhouse there are different rooms
           for different topics. Those rooms are called <strong>channels</strong>
           . People in the clubhouse are <strong>members</strong>, and the
           clubhouse owner can give them special <strong>roles</strong> like
@@ -292,7 +292,7 @@ export const discordSections: Section[] = [
 
         <p>
           So the same person Bob has <strong>one user</strong> but{' '}
-          <strong>many member objects</strong>. One per server he's in. When
+          <strong>many member objects</strong>: one per server he's in. When
           you ban "Bob", you ban the user. When you give him a role, you
           change a member.
         </p>
@@ -340,26 +340,26 @@ export const discordSections: Section[] = [
         <h3>What bots are great for</h3>
         <ul>
           <li>
-            <strong>Moderation</strong>. Auto-delete bad words, mute spam,
+            <strong>Moderation</strong>: auto-delete bad words, mute spam,
             warn-and-ban systems.
           </li>
           <li>
-            <strong>Fun</strong>. Games, quizzes, music, role-playing dice.
+            <strong>Fun</strong>: games, quizzes, music, role-playing dice.
           </li>
           <li>
-            <strong>Utility</strong>. Polls, reminders, translation, weather,
+            <strong>Utility</strong>: polls, reminders, translation, weather,
             search.
           </li>
           <li>
-            <strong>Community</strong>. Welcome new members, give roles based
+            <strong>Community</strong>: welcome new members, give roles based
             on choices, run leveling systems.
           </li>
           <li>
-            <strong>Business</strong>. Accept payments, sell digital goods,
+            <strong>Business</strong>: accept payments, sell digital goods,
             run subscriptions, support tickets.
           </li>
           <li>
-            <strong>Integrations</strong>. Bring news from GitHub, YouTube,
+            <strong>Integrations</strong>: bring news from GitHub, YouTube,
             X/Twitter, RSS, etc., into Discord.
           </li>
         </ul>
@@ -409,7 +409,7 @@ export const discordSections: Section[] = [
 
         <h3>Application vs Bot</h3>
         <p>
-          The big object is an <strong>Application</strong>. Inside the
+          The big object is an <strong>Application</strong>: inside the
           application, the <strong>Bot</strong> tab gives the application a
           chat presence (a member that can join servers). The application also
           owns slash commands, OAuth2 settings, secrets, and integration
@@ -807,7 +807,7 @@ export const discordSections: Section[] = [
         <ul>
           <li>
             Discord <strong>requires</strong> sharding once your bot is in
-            about <strong>2,500 servers</strong>. The Gateway will tell you
+            about <strong>2,500 servers</strong>: the Gateway will tell you
             the recommended shard count.
           </li>
           <li>
@@ -1088,12 +1088,12 @@ export const discordSections: Section[] = [
         <h3>Community bot lists</h3>
         <ul>
           <li>
-            <strong>top.gg</strong>. The biggest community list. Vote-based
+            <strong>top.gg</strong>: the biggest community list. Vote-based
             ranking. Many bots get most of their growth here.
           </li>
           <li>
             <strong>discord.bots.gg</strong>, <strong>discords.com</strong>,
-            <strong> discordbotlist.com</strong>. Smaller but useful.
+            <strong> discordbotlist.com</strong>: smaller but useful.
           </li>
           <li>
             <strong>r/discordapp</strong> on Reddit, plus subreddits for

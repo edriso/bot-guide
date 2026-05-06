@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# Bot Field Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A friendly, complete reference for building Discord and Telegram bots in
+JavaScript or TypeScript. Less code, more clarity. Covers every term and
+limit you keep forgetting, plus a full side-by-side comparison.
 
-Currently, two official plugins are available:
+## What's inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Discord** — servers, channels, roles, intents, slash commands,
+  interactions, embeds, webhooks, sharding, rate limits, verification,
+  monetization, publishing.
+- **Telegram** — chats, BotFather, Bot API vs MTProto, polling vs webhooks,
+  commands, inline mode, keyboards, callback queries, Mini Apps, payments
+  (Stars + cards), files, limits, monetization.
+- **Compare** — audience, discovery, capabilities, limits, money, pros and
+  cons, when to pick which (and when to ship both).
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React 19 + TypeScript + Vite. No router, no state library. Hash-based
+section navigation, per-platform accent colors, and dark/light themes.
 
-## Expanding the ESLint configuration
+## Run it
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+pnpm install
+pnpm dev      # local dev at http://localhost:5173
+pnpm build    # production build into dist/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## How content is organised
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Each platform has its own file in `src/content/`. Sections are plain
+TSX objects with `id`, `title`, `heading`, `lede`, and `content`. Add a
+new section by appending to the array — the sidebar picks it up
+automatically.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```ts
+{
+  id: 'something',
+  title: 'Sidebar label',
+  heading: 'Page heading',
+  lede: <>One line summary.</>,
+  content: <>JSX content...</>,
+}
 ```
+
+Reusable building blocks live in `src/components/Blocks.tsx`:
+
+- `Callout` (info, warn, note tones)
+- `Example`
+- `Terms` for definition lists
+- `Limits` for the cheatsheet grids
+- `ProsCons`
+- `CompareTable`
+
+## Notes on accuracy
+
+Numbers and limits are accurate as of early 2026. Both platforms move
+fast — when in doubt, check the official docs at
+`discord.com/developers/docs` and `core.telegram.org/bots/api`.

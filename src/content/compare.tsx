@@ -34,7 +34,7 @@ export const compareSections: Section[] = [
 
         <Callout label="The lazy answer">
           <p>
-            Many serious bot makers ship on <strong>both</strong>. The two
+            Many serious bot makers ship on <strong>both</strong>: the two
             audiences barely overlap, the code shape is similar, and you
             double your reach for moderate extra effort.
           </p>
@@ -458,7 +458,7 @@ export const compareSections: Section[] = [
         <ul>
           <li><strong>Voice channels</strong> with bots that can join and play audio.</li>
           <li><strong>Stage channels</strong> for talks and panels.</li>
-          <li><strong>Activities</strong>. Embedded mini-games tied to voice rooms.</li>
+          <li><strong>Activities</strong>: embedded mini-games tied to voice rooms.</li>
           <li><strong>Roles</strong> with detailed, layered permissions and color hierarchy.</li>
           <li><strong>Forum and media channels</strong> built around posts.</li>
           <li><strong>Server boosting</strong> as a built-in monetization for server owners.</li>
@@ -467,8 +467,8 @@ export const compareSections: Section[] = [
 
         <h3>Only on Telegram</h3>
         <ul>
-          <li><strong>Inline mode</strong>. Call your bot from any chat.</li>
-          <li><strong>Mini Apps</strong>. Full HTML/CSS/JS apps inside chat.</li>
+          <li><strong>Inline mode</strong>: call your bot from any chat.</li>
+          <li><strong>Mini Apps</strong>: full HTML/CSS/JS apps inside chat.</li>
           <li><strong>Channels</strong> with unlimited subscribers (one-to-many broadcasts).</li>
           <li><strong>Stars</strong> as a built-in micro-payment currency.</li>
           <li><strong>Native card payments</strong> with no platform fee.</li>
