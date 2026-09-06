@@ -89,19 +89,13 @@ export default function App() {
         h.platform === 'compare'
       ) {
         setPlatform(h.platform)
-        if (h.section) setActiveId(h.section)
+        const nextSections = platformSections(h.platform)
+        setActiveId(nextSections.find((item) => item.id === h.section)?.id ?? nextSections[0].id)
       }
     }
     window.addEventListener('hashchange', onPop)
     return () => window.removeEventListener('hashchange', onPop)
   }, [])
-
-  // when platform changes, jump to its first section if active doesn't exist
-  useEffect(() => {
-    if (!sections.some((s) => s.id === activeId)) {
-      setActiveId(sections[0].id)
-    }
-  }, [sections, activeId])
 
   const active = sections.find((s) => s.id === activeId) ?? sections[0]
   const idx = sections.findIndex((s) => s.id === active.id)
